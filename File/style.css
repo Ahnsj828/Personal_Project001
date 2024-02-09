@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@font-face {
+  font-family: "Kcc-Ganpan";
+  src: url("./font/KCC-Ganpan.otf") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kcc-Ganpan";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  background: #fff7e1;
+  width: 100%;
+  height: 100vh;
+}
+.home .bg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+.home .bg .bg-LT,
+.home .bg .bg-LB,
+.home .bg .bg-RT,
+.home .bg .bg-RM,
+.home .bg .bg-RB {
+  position: absolute;
+  display: flex;
+}
+.home .bg .bg-LT {
+  top: 0;
+  left: 0;
+}
+.home .bg .bg-LB {
+  bottom: -1%;
+  left: 0;
+}
+.home .bg .bg-RT {
+  top: 0;
+  right: 0;
+}
+.home .bg .bg-RM {
+  top: 50%;
+  right: 0;
+}
+.home .bg .bg-RB {
+  bottom: -1%;
+  right: 0;
+}
+.home .wrap {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.home .wrap header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .wrap header h1 {
+  font-size: 4rem;
+  position: absolute;
+  left: 180px;
+  top: 50px;
+}
+.home .wrap header h1 .logo-back {
+  color: #ff5d2c;
+}
+.home .wrap header .menu {
+  position: absolute;
+  top: 40px;
+  right: 130px;
+  display: flex;
+  align-items: center;
+}
+.home .wrap header .menu .menu-on {
+  font: normal 1.7rem/1 "Roboto", sans-serif;
+  color: #ff5d2c;
+  margin: 1rem;
+}
+.home .wrap header .menu .menu-on .menu-on-left,
+.home .wrap header .menu .menu-on .menu-on-right {
+  color: #ff8255;
+  margin: 10px;
+}
+.home .wrap header .menu .menu-off {
+  font: normal 1.5rem/1 "Roboto", sans-serif;
+  margin: 1.2rem;
+}
+.home .wrap header .menu-toggle-btn {
+  display: none;
+}
+.home .wrap .container {
+  border: 1px solid #f00;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.home .wrap .container img {
+  border: 1px solid #f00;
+  width: 40%;
+  position: absolute;
+  top: 270px;
+  left: 550px;
+}/*# sourceMappingURL=style.css.map */

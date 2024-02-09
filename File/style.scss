@@ -1,0 +1,144 @@
+// fons-style
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@font-face {
+  font-family: "Kcc-Ganpan";
+  src: url("./font/KCC-Ganpan.otf") format("woff2");
+}
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Road Rage', sans-serif;
+// font-family: 'Kcc-Ganpan';
+
+// reset
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kcc-Ganpan";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  // border: 1px solid #f00;
+  background: #fff7e1;
+  width: 100%;
+  height: 100vh;
+  .bg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    .bg-LT,
+    .bg-LB,
+    .bg-RT,
+    .bg-RM,
+    .bg-RB {
+      position: absolute;
+      display: flex;
+    }
+    .bg-LT {
+      top: 0;
+      left: 0;
+    }
+    .bg-LB {
+      bottom: -1%;
+      left: 0;
+    }
+    .bg-RT {
+      top: 0;
+      right: 0;
+    }
+    .bg-RM {
+      top: 50%;
+      right: 0;
+    }
+    .bg-RB {
+      bottom: -1%;
+      right: 0;
+    }
+  }
+  .wrap {
+    // border: 1px solid #f00;
+    // ---이걸넣어서 올라왔다--
+    position: absolute;
+    display: flex;
+    // -----------------
+    // z-index: 1;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    header {
+      // ---이걸넣어서 올라왔다--
+      position: fixed;
+      top: 0;
+      left: 0;
+      // -----------------
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        font-size: 4rem;
+        position: absolute;
+        left: 180px;
+        top: 50px;
+        .logo-back {
+          color: #ff5d2c;
+        }
+      }
+      .menu {
+        position: absolute;
+        top: 40px;
+        right: 130px;
+        display: flex;
+        align-items: center;
+        .menu-on {
+          font: normal 1.7rem/1 "Roboto", sans-serif;
+          color: #ff5d2c;
+          margin: 1rem;
+          .menu-on-left,
+          .menu-on-right {
+            color: #ff8255;
+            margin: 10px;
+          }
+        }
+        .menu-off {
+          font: normal 1.5rem/1 "Roboto", sans-serif;
+          margin: 1.2rem;
+        }
+      }
+      .menu-toggle-btn {
+        display: none;
+      }
+    }
+    .container {
+      border: 1px solid #f00;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // -----------------
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      // text-align: center;
+      img {
+        border: 1px solid #f00;
+        width: 40%;
+        position: absolute;
+        top: 270px;
+        left: 550px;
+      }
+    }
+  }
+}
