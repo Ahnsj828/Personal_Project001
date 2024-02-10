@@ -48,6 +48,8 @@ a {
 .home .bg .bg-LB {
   bottom: -1%;
   left: 0;
+  width: 40%;
+  height: 40%;
 }
 .home .bg .bg-RT {
   top: 0;
@@ -73,30 +75,28 @@ a {
 }
 .home .wrap header {
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 0%;
+  top: 10%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .home .wrap header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  left: 180px;
-  top: 50px;
+  left: 10%;
 }
 .home .wrap header h1 .logo-back {
   color: #ff5d2c;
 }
 .home .wrap header .menu {
   position: absolute;
-  top: 40px;
-  right: 130px;
+  right: 10%;
   display: flex;
-  align-items: center;
 }
 .home .wrap header .menu .menu-on {
-  font: normal 1.7rem/1 "Roboto", sans-serif;
+  font: normal 1.4rem/1 "Roboto", sans-serif;
   color: #ff5d2c;
   margin: 1rem;
 }
@@ -106,23 +106,71 @@ a {
   margin: 10px;
 }
 .home .wrap header .menu .menu-off {
-  font: normal 1.5rem/1 "Roboto", sans-serif;
+  font: normal 1.1rem/1 "Roboto", sans-serif;
   margin: 1.2rem;
 }
 .home .wrap header .menu-toggle-btn {
   display: none;
 }
-.home .wrap .container {
+.home .wrap section {
   border: 1px solid #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+.home .wrap section .img {
+  display: flex;
+  height: 100%;
+}
+.home .wrap section .text {
+  border: 1px solid #00f;
+  justify-content: start;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  top: 30%;
+  padding: 0.3em;
+}
+.home .wrap section .text #sub1 {
+  font: normal 1rem/1 "Roboto";
+  letter-spacing: 0.5rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.home .wrap section .text #home-title1 {
+  font: normal 6rem/0.7 "Road Rage";
+}
+.home .wrap section .text #home-title2 {
+  border: 1px solid #0f0;
+  font: normal 6rem/0.7 "Road Rage";
+}
+.home .wrap section .text #home-title3 {
+  border: 1px solid #00f;
+  font: normal 6rem/0.7 "Road Rage";
+}
+.home .wrap .sns {
+  bottom: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.home .wrap .container img {
-  border: 1px solid #f00;
-  width: 40%;
-  position: absolute;
-  top: 270px;
-  left: 550px;
+.home .wrap .sns .social {
+  font: normal 100px/1 "Road Rage";
+}
+.home .wrap .sns .fa-square-instagram {
+  margin: 10px;
+}
+.home .wrap .sns .fa-square-facebook {
+  margin: 10px;
+}
+.home .wrap .sns .fa-github {
+  margin: 10px;
+}
+.home .wrap .sns .fa-google {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
