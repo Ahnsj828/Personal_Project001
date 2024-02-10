@@ -17,7 +17,7 @@
 @import "reset";
 @import "mixin";
 
-//======= desktop =======//
+//======= desktop1 =======//
 .home {
   // border: 1px solid #f00;
   background: #fff7e1;
@@ -125,11 +125,11 @@
           animation: W2 linear 20s infinite;
           @keyframes W2 {
             0% {
-              left: 84%;
+              left: 87%;
               opacity: 0;
             }
             7%{
-              left: 87%;
+              left: 84%;
               opacity: 1;
             }
             80% {
@@ -222,6 +222,164 @@
         @include social
       }
       @include sns-icons
+    }
+  }
+}
+
+//======= desktop2 =======//
+@media screen and (max-width: 1397px) {
+  .home {
+    .wrap {
+      // === section ===
+      section {
+        .img {
+          width: 40%;
+          height: 100%;
+          z-index: 2;
+          #section-bg-t {
+            display: none;
+          }
+        }
+        .text{
+          top: 33%;
+          left: 5%;
+          height: 60%;
+          z-index: 1;
+          #sub1 {
+            font: normal 1rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 4.5rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 4.5rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 4.5em/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======= desktop3 =======//
+@media screen and (max-width: 1270px) {
+  .home {
+    .bg {
+      .bg-LT {
+        height: 30%;
+      }
+      .bg-LB {
+        height: 33%;
+      }
+      .bg-RT {
+        height: 21%;
+      }
+      .bg-RM {
+        height: 25%;
+      }
+      .bg-RB {
+        height: 23%;
+      }
+    }
+    .wrap {
+      // === section ===
+      section {
+        .img {
+          height: 100%;
+          z-index: 2;
+          #section-bg {
+            display: none;
+          }
+          #section-bg-t {
+            display: flex;
+          }
+        }
+        .text{
+          top: 33%;
+          left: -1%;
+          height: 60%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+//======= desktop4 =======//
+@media screen and (max-width: 1100px) {
+  .home {
+    .bg {
+      .bg-LT {
+        height: 28%;
+      }
+      .bg-LB {
+        height: 30%;
+      }
+      .bg-RT {
+        height: 21%;
+      }
+      .bg-RM {
+        height: 24%;
+      }
+      .bg-RB {
+        height: 22%;
+      }
+    }
+    .wrap {
+      // === section ===
+      section {
+        .text{
+          top: 40%;
+          left: 2%;
+          height: 60%;
+          z-index: 1;
+          #sub1 {
+            font: normal 0.9rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 4rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 4rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 4em/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
     }
   }
 }
