@@ -64,6 +64,7 @@ a {
   right: 0;
 }
 .home .wrap {
+  border: 1px solid #f00;
   position: absolute;
   display: flex;
   top: 0;
@@ -113,64 +114,76 @@ a {
   display: none;
 }
 .home .wrap section {
-  border: 1px solid #f00;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-47%, -45%);
   display: flex;
   width: 100%;
-  height: 60%;
+  height: 50%;
   justify-content: center;
 }
 .home .wrap section .img {
   display: flex;
   height: 100%;
 }
+.home .wrap section .img #section-W2 {
+  position: absolute;
+  bottom: 0;
+  left: 49.5%;
+  left: 43%;
+  height: 20%;
+}
 .home .wrap section .text {
-  border: 1px solid #00f;
   justify-content: start;
   display: inline-block;
   text-align: left;
   position: relative;
-  top: 30%;
-  padding: 0.3em;
+  top: 27%;
+  padding: 0.3rem;
 }
 .home .wrap section .text #sub1 {
   font: normal 1rem/1 "Roboto";
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   margin-left: 0.3rem;
   margin-bottom: 0.1rem;
 }
 .home .wrap section .text #home-title1 {
   font: normal 6rem/0.7 "Road Rage";
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.7rem;
 }
 .home .wrap section .text #home-title2 {
-  border: 1px solid #0f0;
   font: normal 6rem/0.7 "Road Rage";
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.7rem;
 }
 .home .wrap section .text #home-title3 {
-  border: 1px solid #00f;
   font: normal 6rem/0.7 "Road Rage";
+  letter-spacing: 0.05rem;
 }
-.home .wrap .sns {
-  bottom: 30px;
+.home .sns {
+  left: 4%;
+  bottom: 35%;
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
+  transform: rotate(-90deg);
 }
-.home .wrap .sns .social {
-  font: normal 100px/1 "Road Rage";
+.home .sns .social {
+  font: normal 1.2rem/1 "Roboto";
+  letter-spacing: 0.07rem;
 }
-.home .wrap .sns .fa-square-instagram {
-  margin: 10px;
+.home .sns .fa-square-instagram {
+  margin: 0.5rem;
 }
-.home .wrap .sns .fa-square-facebook {
-  margin: 10px;
+.home .sns .fa-square-facebook {
+  margin: 0.5rem;
 }
-.home .wrap .sns .fa-github {
-  margin: 10px;
+.home .sns .fa-github {
+  margin: 0.5rem;
 }
-.home .wrap .sns .fa-google {
-  margin: 10px;
+.home .sns .fa-google {
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

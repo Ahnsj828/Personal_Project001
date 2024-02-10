@@ -67,7 +67,9 @@ a {
       right: 0;
     }
   }
+
   .wrap {
+    border: 1px solid #f00;
     // ---이걸넣어서 올라왔다--
     position: absolute;
     display: flex;
@@ -78,6 +80,7 @@ a {
     text-align: center;
     width: 100%;
     height: 100vh;
+    // header
     header {
       // ---이걸넣어서 올라왔다--
       position: fixed;
@@ -122,68 +125,84 @@ a {
       }
     }
     section {
-      border: 1px solid #f00;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-47%, -45%);
       display: flex;
       width: 100%;
-      height: 60%;
+      height: 50%;
       justify-content: center;
       .img {
         display: flex;
         height: 100%;
+        #section-W2 {
+          position: absolute;
+          bottom: 0;
+          left: 49.5%;
+          left: 43%;
+          height: 20%;
+        }
       }
       .text{
-        border: 1px solid #00f;
+        // border: 1px solid #00f;
         justify-content: start;
         display: inline-block;
         text-align: left;
         position: relative;
-        top: 30%;
-        padding: 0.3em;
+        top: 27%;
+        padding: 0.3rem;
         #sub1 {
           // border: 1px solid #f00;
           font: normal 1rem/1 "Roboto";
-          letter-spacing: 0.5rem;
+          letter-spacing: 0.3rem;
           margin-left: 0.3rem;
           margin-bottom: 0.1rem;
         }
         #home-title1{
           // border: 1px solid #f00;
           font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
+          margin-bottom: 0.7rem;
         }
         #home-title2{
-          border: 1px solid #0f0;
+          // border: 1px solid #0f0;
           font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
+          margin-bottom: 0.7rem;
         }
         #home-title3{
-          border: 1px solid #00f;
+          // border: 1px solid #00f;
           font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
         }
       }
+     }
     }
     .sns {
-      bottom: 30px;
+      // border: 2px solid pink;
+      left: 4%;
+      bottom: 35%;
       display: flex;
+      position: absolute;
       justify-content: center;
       align-items: center;
+      transform: rotate(-90deg);
       .social {
-        font: normal 100px/1 "Road Rage";
+        font: normal 1.2rem/1 "Roboto";
+        letter-spacing: 0.07rem;
       }
       .fa-square-instagram {
-        margin: 10px;
+        margin: 0.5rem;
       }
       .fa-square-facebook {
-        margin: 10px;
+        margin: 0.5rem;
       }
       .fa-github {
-        margin: 10px;
+        margin: 0.5rem;
       }
       .fa-google {
-        margin: 10px;
+        margin: 0.5rem;
       }
     }
   }
-}
