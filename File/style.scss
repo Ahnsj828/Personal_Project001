@@ -69,7 +69,6 @@ a {
   }
 
   .wrap {
-    border: 1px solid #f00;
     // ---이걸넣어서 올라왔다--
     position: absolute;
     display: flex;
@@ -130,18 +129,40 @@ a {
       left: 50%;
       transform: translate(-47%, -45%);
       display: flex;
-      width: 100%;
+      width: 93%;
       height: 50%;
       justify-content: center;
+      padding: 0;
       .img {
         display: flex;
         height: 100%;
         #section-W2 {
           position: absolute;
           bottom: 0;
-          left: 49.5%;
-          left: 43%;
+          left:38%;
+          // left: 90%;
           height: 20%;
+          margin: 0;
+          z-index: 1;
+          animation: W2 linear 20s infinite;
+          @keyframes W2 {
+            0% {
+              left: 90%;
+              opacity: 0;
+            }
+            7%{
+              left: 87%;
+              opacity: 1;
+            }
+            80% {
+              left: 45%;
+              opacity: 1;
+            }
+            100%{
+              left: 38%;
+              opacity: 0;
+            }
+          }
         }
       }
       .text{
