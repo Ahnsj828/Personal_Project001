@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @font-face {
   font-family: "Kcc-Ganpan";
   src: url("./font/KCC-Ganpan.otf") format("woff2");
+}
+@font-face {
+  font-family: "Nanum-S-N";
+  src: url("./font/NanumSquareNeoOTF-Rg.otf") format("woff2");
 }
 * {
   padding: 0;
@@ -48,8 +52,7 @@ a {
 .home .bg .bg-LB {
   bottom: -1%;
   left: 0;
-  width: 40%;
-  height: 40%;
+  height: 35%;
 }
 .home .bg .bg-RT {
   top: 0;
@@ -58,6 +61,7 @@ a {
 .home .bg .bg-RM {
   top: 50%;
   right: 0;
+  height: 30%;
 }
 .home .bg .bg-RB {
   bottom: -1%;
@@ -86,6 +90,7 @@ a {
   font-size: 3rem;
   position: absolute;
   left: 10%;
+  color: #222;
 }
 .home .wrap header h1 .logo-back {
   color: #ff5d2c;
@@ -116,9 +121,9 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-47%, -45%);
+  transform: translate(-43%, -45%);
   display: flex;
-  width: 93%;
+  width: 86%;
   height: 50%;
   justify-content: center;
   padding: 0;
@@ -126,6 +131,9 @@ a {
 .home .wrap section .img {
   display: flex;
   height: 100%;
+  animation: left 0.8s 0.1s linear;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 .home .wrap section .img #section-W2 {
   position: absolute;
@@ -133,7 +141,6 @@ a {
   left: 38%;
   height: 20%;
   margin: 0;
-  z-index: 1;
   animation: W2 linear 20s infinite;
 }
 @keyframes W2 {
@@ -146,12 +153,22 @@ a {
     opacity: 1;
   }
   80% {
-    left: 45%;
+    left: 43%;
     opacity: 1;
   }
   100% {
-    left: 38%;
+    left: 36%;
     opacity: 0;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    margin-left: -8%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
   }
 }
 .home .wrap section .text {
@@ -161,28 +178,58 @@ a {
   position: relative;
   top: 27%;
   padding: 0.3rem;
+  width: 25%;
+  z-index: 1;
 }
 .home .wrap section .text #sub1 {
   font: normal 1rem/1 "Roboto";
   letter-spacing: 0.3rem;
   margin-left: 0.3rem;
   margin-bottom: 0.1rem;
+  animation: right1 0.6s 0.3s linear;
+  animation-fill-mode: both;
 }
 .home .wrap section .text #home-title1 {
   font: normal 6rem/0.7 "Road Rage";
   letter-spacing: 0.05rem;
   margin-bottom: 0.7rem;
+  animation: right1 0.4s 0.5s linear;
+  animation-fill-mode: both;
 }
 .home .wrap section .text #home-title2 {
   font: normal 6rem/0.7 "Road Rage";
   letter-spacing: 0.05rem;
   margin-bottom: 0.7rem;
+  animation: right1 0.4s 0.6s linear;
+  animation-fill-mode: both;
 }
 .home .wrap section .text #home-title3 {
   font: normal 6rem/0.7 "Road Rage";
   letter-spacing: 0.05rem;
+  animation: right2 0.4s 0.9s linear;
+  animation-fill-mode: both;
 }
-.home .sns {
+@keyframes right1 {
+  0% {
+    opacity: 0;
+    margin-left: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
+  }
+}
+@keyframes right2 {
+  0% {
+    opacity: 0;
+    margin-left: 3%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
+  }
+}
+.home .wrap .sns {
   left: 4%;
   bottom: 35%;
   display: flex;
@@ -191,19 +238,19 @@ a {
   align-items: center;
   transform: rotate(-90deg);
 }
-.home .sns .social {
+.home .wrap .sns .social {
   font: normal 1.2rem/1 "Roboto";
   letter-spacing: 0.07rem;
 }
-.home .sns .fa-square-instagram {
+.home .wrap .sns .fa-square-instagram {
   margin: 0.5rem;
 }
-.home .sns .fa-square-facebook {
+.home .wrap .sns .fa-square-facebook {
   margin: 0.5rem;
 }
-.home .sns .fa-github {
+.home .wrap .sns .fa-github {
   margin: 0.5rem;
 }
-.home .sns .fa-google {
+.home .wrap .sns .fa-google {
   margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

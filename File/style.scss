@@ -1,27 +1,22 @@
 // fons-style
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @font-face {
   font-family: "Kcc-Ganpan";
   src: url("./font/KCC-Ganpan.otf") format("woff2");
 }
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Road Rage', sans-serif;
+@font-face {
+  font-family: "Nanum-S-N";
+  src: url("./font/NanumSquareNeoOTF-Rg.otf") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 // font-family: 'Kcc-Ganpan';
+// font-family: 'Nanum-S-N';
+// font-family: 'Road Rage', sans-serif;
+// font-family: 'Roboto', sans-serif;
 
-// reset
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Kcc-Ganpan";
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
+@import "reset";
+@import "mixin";
+@import "variables";
 
 .home {
   // border: 1px solid #f00;
@@ -51,8 +46,7 @@ a {
     .bg-LB {
       bottom: -1%;
       left: 0;
-      width: 40%;
-      height: 40%;
+      height: 35%;
     }
     .bg-RT {
       top: 0;
@@ -61,6 +55,7 @@ a {
     .bg-RM {
       top: 50%;
       right: 0;
+      height: 30%;
     }
     .bg-RB {
       bottom: -1%;
@@ -79,7 +74,8 @@ a {
     text-align: center;
     width: 100%;
     height: 100vh;
-    // header
+
+    // ===== header =====
     header {
       // ---이걸넣어서 올라왔다--
       position: fixed;
@@ -94,25 +90,15 @@ a {
         font-size: 3rem;
         position: absolute;
         left: 10%;
+        color: map-get($font-color, primary);
         .logo-back {
           color: #ff5d2c;
         }
       }
       .menu {
-        position: absolute;
-        // top: 40px;
-        right: 10%;
-        display: flex;
-        // align-items: center;
+        @include menu;
         .menu-on {
-          font: normal 1.4rem/1 "Roboto", sans-serif;
-          color: #ff5d2c;
-          margin: 1rem;
-          .menu-on-left,
-          .menu-on-right {
-            color: #ff8255;
-            margin: 10px;
-          }
+          @include menu-on;
         }
         .menu-off {
           font: normal 1.1rem/1 "Roboto", sans-serif;
@@ -123,19 +109,24 @@ a {
         display: none;
       }
     }
+
+    // ===== section =====
     section {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-47%, -45%);
+      transform: translate(-43%, -45%);
       display: flex;
-      width: 93%;
+      width: 86%;
       height: 50%;
       justify-content: center;
       padding: 0;
       .img {
         display: flex;
         height: 100%;
+        animation: left 0.8s 0.1s linear;
+        animation-fill-mode: both;
+        z-index: 2;
         #section-W2 {
           position: absolute;
           bottom: 0;
@@ -143,7 +134,6 @@ a {
           // left: 90%;
           height: 20%;
           margin: 0;
-          z-index: 1;
           animation: W2 linear 20s infinite;
           @keyframes W2 {
             0% {
@@ -155,75 +145,95 @@ a {
               opacity: 1;
             }
             80% {
-              left: 45%;
+              left: 43%;
               opacity: 1;
             }
             100%{
-              left: 38%;
+              left: 36%;
               opacity: 0;
             }
           }
         }
+        @keyframes left {
+          0%{
+            opacity: 0;
+            margin-left: -8%;
+          }
+          100%{
+            opacity: 1;
+            margin-left: 1;
+          }
+        }
       }
       .text{
-        // border: 1px solid #00f;
         justify-content: start;
         display: inline-block;
         text-align: left;
         position: relative;
         top: 27%;
         padding: 0.3rem;
+        width: 25%;
+        z-index: 1;
+        // animation: img 1s 0.5s linear;
+        // animation-fill-mode: both;
         #sub1 {
-          // border: 1px solid #f00;
           font: normal 1rem/1 "Roboto";
           letter-spacing: 0.3rem;
           margin-left: 0.3rem;
           margin-bottom: 0.1rem;
+          animation: right1 0.6s 0.3s linear;
+          animation-fill-mode: both;
         }
         #home-title1{
-          // border: 1px solid #f00;
           font: normal 6rem/0.7 "Road Rage";
           letter-spacing: 0.05rem;
           margin-bottom: 0.7rem;
+          animation: right1 0.4s 0.5s linear;
+          animation-fill-mode: both;
         }
         #home-title2{
-          // border: 1px solid #0f0;
           font: normal 6rem/0.7 "Road Rage";
           letter-spacing: 0.05rem;
           margin-bottom: 0.7rem;
+          animation: right1 0.4s 0.6s linear;
+          animation-fill-mode: both;
         }
         #home-title3{
-          // border: 1px solid #00f;
           font: normal 6rem/0.7 "Road Rage";
           letter-spacing: 0.05rem;
+          animation: right2 0.4s 0.9s linear;
+          animation-fill-mode: both;
+        }
+        @keyframes right1 {
+          0%{
+            opacity: 0;
+            margin-left: 10%;
+          }
+          100%{
+            opacity: 1;
+            margin-left: 1;
+          }
+        }
+        @keyframes right2 {
+          0%{
+            opacity: 0;
+            margin-left: 3%;
+          }
+          100%{
+            opacity: 1;
+            margin-left: 1;
+          }
         }
       }
-     }
     }
+    
+    // ===== footer =====
     .sns {
-      // border: 2px solid pink;
-      left: 4%;
-      bottom: 35%;
-      display: flex;
-      position: absolute;
-      justify-content: center;
-      align-items: center;
-      transform: rotate(-90deg);
+      @include sns;
       .social {
-        font: normal 1.2rem/1 "Roboto";
-        letter-spacing: 0.07rem;
+        @include social
       }
-      .fa-square-instagram {
-        margin: 0.5rem;
-      }
-      .fa-square-facebook {
-        margin: 0.5rem;
-      }
-      .fa-github {
-        margin: 0.5rem;
-      }
-      .fa-google {
-        margin: 0.5rem;
-      }
+      @include sns-icons
     }
   }
+}

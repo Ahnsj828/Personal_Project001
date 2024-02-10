@@ -1,0 +1,42 @@
+@mixin menu {
+  position: absolute;
+  right: 10%;
+  display: flex;
+}
+@mixin menu-on {
+  font: normal 1.4rem/1 "Roboto", sans-serif;
+  color: #ff5d2c;
+  margin: 1rem;
+  .menu-on-left,
+  .menu-on-right {
+    color: #ff8255;
+    margin: 10px;
+  }
+}
+@mixin sns {
+  left: 4%;
+  bottom: 35%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+@mixin social {
+  font: normal 1.2rem/1 "Roboto";
+        letter-spacing: 0.07rem;
+}
+@mixin sns-icons {
+  .fa-square-instagram {
+    margin: 0.5rem;
+  }
+  .fa-square-facebook {
+    margin: 0.5rem;
+  }
+  .fa-github {
+    margin: 0.5rem;
+  }
+  .fa-google {
+    margin: 0.5rem;
+  }
+}
