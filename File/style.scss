@@ -90,7 +90,7 @@
           @include menu-off;
         }
       }
-      .menu-toggle-btn {
+      .trigger {
         display: none;
       }
     }
@@ -417,7 +417,7 @@
   }
 }
 
-//======= tablet =======//
+//======= tablet1 =======//
 @media screen and (max-width: 1024px) {
   .home {
     // border: 1px solid #f00;
@@ -530,6 +530,62 @@
     }
   }
 }
+//======= tablet2 =======//
+@media screen and (max-width: 910px) {
+  .home {
+    .wrap {
+      // === header ===
+      // === section ===
+      section {
+        .text{
+          top: 57%;
+          left: 10%;
+          padding: 0.3rem;
+          width: 25%;
+          height: 50%;
+          z-index: 1;
+          #sub1 {
+            font: normal 0.7rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 3rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 3rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 3em/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+      
+      // === footer ===
+      .sns {
+        @include sns;
+        .social {
+          @include social-t
+        }
+        @include sns-icons-t
+      }
+    }
+  }
+}
 
 //======= mobile =======//
 @media screen and (max-width: 768px){
@@ -557,19 +613,77 @@
       // === header ===
       header {
         // border: 1px solid crimson;
+        z-index: 2;
         top: 6%;
         h1 {
           @include logo-m;
         }
         .menu {
-          @include menu;
-          .menu-on {
-            @include menu-on-t;
+          display: block;
+          position: fixed;
+          top: 0;
+          right: -90%;
+          background: #fff;
+          width: 60%;
+          height: 100vh;
+          text-align: center;
+          padding: 80px 20px 0 0;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+          transition: 0.3s;
+          &.active {
+            right: 0;
           }
-          .menu-off {
-            @include menu-off-t;
+          a {
+            color: #000;
+            display: block;
+            padding: 16px;
+            font-size: 18px;
           }
         }
+        .trigger {
+          // border: 1px solid #f00;
+          display: flex;
+          position: absolute;
+          top: -0.5rem;
+          right: 10%;
+          width: 7%;
+          height: 1.2rem;
+          z-index: 3;
+          span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.36rem;
+            border-radius: 0.18rem;
+            background: #201C14;
+            transition: 0.3s;
+            &:nth-child(1) {
+              top: 0;
+            }
+            &:nth-child(2) {
+              top: 50%;
+            }
+            &:nth-child(3) {
+              top: 100%;
+            }
+          }
+          &.active span:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &.active span:nth-child(2) {
+            opacity: 0;
+          }
+          &.active span:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+        }
+        // header.active .trigger span {
+        //   background: #f00;
+        // }
+        
       }
   
       // === section ===
@@ -582,9 +696,10 @@
         transform: translate(-50%, -50%);
         padding: 0;
         margin: 0;
+        z-index: 1;
         .img {
-          width: 65%;
-          height: 65%;
+          width: 60%;
+          height: 60%;
           position: absolute;
           top: 15%;
           justify-content: center;
@@ -641,7 +756,7 @@
           text-align: center;
           justify-content: center;
           position: absolute;
-          top: 90%;
+          top: 85%;
           left: 50%;
           transform: translate(-50%, -50%);
           padding: 0;
@@ -653,14 +768,14 @@
             justify-content: center;
             text-align: center;
             display: flex;
-            width: 50%;
+            width: 55%;
             position: absolute;
             bottom: 15%;
             font: normal 0.8rem/1 "Roboto";
             letter-spacing: 0.3rem;
             margin-left: 0;
             margin-bottom: 0;
-            margin-top: 5%;
+            // margin-top: 10%;
             animation: bottom 0.6s 0.3s linear;
             animation-fill-mode: both;
           }
