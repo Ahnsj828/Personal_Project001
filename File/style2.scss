@@ -455,116 +455,116 @@
 }
 
 //======= tablet1 =======//
-@media screen and (max-width: 910px) {
-  .home {
-    .bg {
-      .bg-LT {
-        height: 25%;
-      }
-      .bg-LB {
-        height: 28%;
-      }
-      .bg-RT {
-        height: 20%;
-      }
-      .bg-RM {
-        height: 23%;
-      }
-      .bg-RB {
-        height: 20%;
-      }
-    }
+// @media screen and (max-width: 910px) {
+//   .home {
+//     .bg {
+//       .bg-LT {
+//         height: 25%;
+//       }
+//       .bg-LB {
+//         height: 28%;
+//       }
+//       .bg-RT {
+//         height: 20%;
+//       }
+//       .bg-RM {
+//         height: 23%;
+//       }
+//       .bg-RB {
+//         height: 20%;
+//       }
+//     }
   
-    .wrap {
-      // === header ===
+//     .wrap {
+//       // === header ===
 
-      // === section ===
-      section {
-      //   position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-38%, -25%);
-        .img {
-          display: flex;
-          height: 70%;
-          #section-bg {
-            display: none;
-          }
-          #section-bg-t {
-          display: flex;
-          animation: section-bg 0.8s 0.1s linear;
-          animation-fill-mode: both;
-          }
-          #section-bg-m {
-            display: none;
-          }
-          #section-b {
-            position: absolute;
-            top: 0;
-            left: 30%;
-            height: 10%;
-            margin: 0;
-            animation: section-b-t linear 10s infinite;
-            @keyframes section-b-t {
-              0% {
-                top: 0;
-                left: 30%;
-                opacity: 0;
-              }
-              7% {
-                top: -4%;
-                left: 34%;
-                opacity: 1;
-              }
-              50% {
-                top: -25%;
-                left: 55%;
-                opacity: 1;
-              }
-              83% {
-                top: -60%;
-                left: 70%;
-                opacity: 1;
-              }
-              100%{
-                top: -68%;
-                left: 80%;
-                opacity: 0;
-              }
-            }
-          } 
-        }
-        .text{
-          bottom: -30%;
-          #about-title1{
-            font: normal 1.7rem/1 "Kcc-Ganpan";
-          }
-          #about-title2{
-            font: normal 1.7rem/1 "Kcc-Ganpan";
-          }
-          #about-title3{
-            font: normal 1.7rem/1 "Kcc-Ganpan";
-          }
-          #about-title4{
-            font: normal 1.7rem/1 "Kcc-Ganpan";
-          }
-          #about-sub1 {
-            font: normal 0.8rem/1 "Nanum-S-N";
-          }
-        }
-      }
+//       // === section ===
+//       section {
+//       //   position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-38%, -25%);
+//         .img {
+//           display: flex;
+//           height: 70%;
+//           #section-bg {
+//             display: none;
+//           }
+//           #section-bg-t {
+//           display: flex;
+//           animation: section-bg 0.8s 0.1s linear;
+//           animation-fill-mode: both;
+//           }
+//           #section-bg-m {
+//             display: none;
+//           }
+//           #section-b {
+//             position: absolute;
+//             top: 0;
+//             left: 30%;
+//             height: 10%;
+//             margin: 0;
+//             animation: section-b-t linear 10s infinite;
+//             @keyframes section-b-t {
+//               0% {
+//                 top: 0;
+//                 left: 30%;
+//                 opacity: 0;
+//               }
+//               7% {
+//                 top: -4%;
+//                 left: 34%;
+//                 opacity: 1;
+//               }
+//               50% {
+//                 top: -25%;
+//                 left: 55%;
+//                 opacity: 1;
+//               }
+//               83% {
+//                 top: -60%;
+//                 left: 70%;
+//                 opacity: 1;
+//               }
+//               100%{
+//                 top: -68%;
+//                 left: 80%;
+//                 opacity: 0;
+//               }
+//             }
+//           } 
+//         }
+//         .text{
+//           bottom: -30%;
+//           #about-title1{
+//             font: normal 1.7rem/1 "Kcc-Ganpan";
+//           }
+//           #about-title2{
+//             font: normal 1.7rem/1 "Kcc-Ganpan";
+//           }
+//           #about-title3{
+//             font: normal 1.7rem/1 "Kcc-Ganpan";
+//           }
+//           #about-title4{
+//             font: normal 1.7rem/1 "Kcc-Ganpan";
+//           }
+//           #about-sub1 {
+//             font: normal 0.8rem/1 "Nanum-S-N";
+//           }
+//         }
+//       }
       
-      // === footer ===
-      .sns {
-        @include sns;
-        .social {
-          @include social-t
-        }
-        @include sns-icons-t
-      }
-    }
-  }
-}
+//       // === footer ===
+//       .sns {
+//         @include sns;
+//         .social {
+//           @include social-t
+//         }
+//         @include sns-icons-t
+//       }
+//     }
+//   }
+// }
 
 //======= mobile =======//
 @media screen and (max-width: 768px){
