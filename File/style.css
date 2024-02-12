@@ -131,6 +131,7 @@ a {
 .home .wrap section .img {
   display: flex;
   height: 100%;
+  z-index: 2;
 }
 .home .wrap section .img #section-bg {
   animation: section-bg 0.8s 0.1s linear;

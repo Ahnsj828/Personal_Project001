@@ -109,6 +109,7 @@
       .img {
         display: flex;
         height: 100%;
+        z-index: 2;
         #section-bg {
           animation: section-bg 0.8s 0.1s linear;
           animation-fill-mode: both;
