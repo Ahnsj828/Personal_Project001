@@ -97,95 +97,56 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-43%, -45%);
+      transform: translate(-50%, -45%);
       display: flex;
-      width: 86%;
-      height: 50%;
+      width: 70rem;
+      height: 25rem;
       justify-content: center;
       padding: 0;
       z-index: 1;
-      .text {
-        justify-content: start;
-        display: inline-block;
-        text-align: left;
-        position: relative;
-        bottom: -25%;
-        padding: 0.5rem;
-        width: 27%;
-        height: 80%;
-        z-index: 1;
-        #about-title1 {
-          font: normal 3rem/1 "Kcc-Ganpan";
-          letter-spacing: 0rem;
-          margin-bottom: 0.4rem;
-          animation: right1 0.5s 0.3s linear;
-          animation-fill-mode: both;
-        }
-        #about-title2 {
-          font: normal 3rem/1 "Kcc-Ganpan";
-          letter-spacing: 0rem;
-          margin-bottom: 1rem;
-          animation: right1 0.5s 0.4s linear;
-          animation-fill-mode: both;
-        }
-        #about-title3 {
-          font: normal 3rem/1 "Kcc-Ganpan";
-          letter-spacing: 0rem;
-          margin-bottom: 0.4rem;
-          animation: right1 0.5s 0.5s linear;
-          animation-fill-mode: both;
-        }
-        #about-title4 {
-          font: normal 3rem/1 "Kcc-Ganpan";
-          letter-spacing: 0rem;
-          margin-bottom: 1rem;
-          animation: right1 0.5s 0.6s linear;
-          animation-fill-mode: both;
-        }
-        #about-sub1 {
-          font: normal 0.8rem/1 "Nanum-S-N";
-          letter-spacing: 0rem;
-          margin-left: 0.3rem;
-          animation: right2 0.6s 0.5s linear;
-          animation-fill-mode: both;
-        }
-        @keyframes right1 {
-          0% {
-            opacity: 0;
-            margin-left: 10%;
-          }
-          100% {
-            opacity: 1;
-            margin-left: 1;
-          }
-        }
-        @keyframes right2 {
-          0% {
-            opacity: 0;
-            margin-left: 13%;
-          }
-          100% {
-            opacity: 1;
-            margin-left: 1;
-          }
+      .sns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        width: 48rem;
+        height: 20rem;
+        z-index: 3;
+        a {
+          background: rgba(255, 242, 243, 0.7);
+          color: rgba(32, 28, 20, 0.85);
+          box-shadow: 0 0 2rem rgba(32, 28, 20, 0.9);
+          box-shadow: inset -0.1rem -0.1rem 0.5rem rgba(32, 28, 20, 0.7);
+          border-radius: 1rem;
+          padding: 0 1rem;
+          font-size: 4rem;
+          margin: 0 2rem; 
+          cursor: pointer;
         }
       }
       .img {
         display: flex;
-        height: 100%;
-        #section-bg {
+        height: 25rem;
+        z-index: 1;
+        #section-bg, #section-g {
+          width: 50rem;
+          bottom: 0;
           animation: section-bg 0.8s 0.1s linear;
           animation-fill-mode: both;
           @keyframes section-bg {
             0% {
               opacity: 0;
-              margin-left: -8%;
+              margin-left: -3rem;
             }
             100% {
               opacity: 1;
-              margin-left: 1;
+              margin-left: 0;
             }
           }
+        }
+        #section-bg {
+          z-index: 0;
         }
         #section-bg-2 {
           display: none;
@@ -196,64 +157,46 @@
         #section-bg-m {
           display: none;
         }
+        #section-g {
+          display: flex;
+          position: absolute;
+          z-index: 3;
+        }
         #section-c {
           display: flex;
-          height: 5rem;
+          height: 4.3rem;
           position: absolute;
-        }
-        #section-b {
-          position: absolute;
-          top: 0;
-          left: 30%;
-          height: 18%;
-          margin: 0;
-          animation: section-b linear 15s infinite;
-          @keyframes section-b {
+          bottom: 3rem;
+          right: 53rem;
+          z-index: 2;
+          animation: section-c linear  7s infinite;
+          @keyframes section-c {
             0% {
-              top: 0;
-              left: 30%;
               opacity: 0;
+              right: 7rem;
             }
-            25% {
-              top: -40%;
-              left: 42.5%;
+            5% {
               opacity: 1;
+              right: 9.3rem;
             }
-            50% {
-              top: -35%;
-              left: 55%;
+            95% {
               opacity: 1;
-            }
-            75% {
-              top: -65%;
-              left: 64%;
-              opacity: 1;
-            }
-            90% {
-              top: -55%;
-              left: 68%;
-              opacity: 0;
+              right: 50.7rem;
             }
             100% {
-              top: -60%;
-              left: 100%;
               opacity: 0;
+              right: 53rem;
             }
           }
         }
       }
     }
-
-    // === footer ===
-    .sns {
-      @include sns;
-      .social {
-        @include social;
-      }
-      @include sns-icons;
-    }
   }
 }
+
+
+
+
 
 //======= desktop2 =======//
 @media screen and (max-width: 1270px) {
