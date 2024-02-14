@@ -568,7 +568,6 @@ a {
     cursor: pointer;
   }
   .home .wrap section .sns a #instagram {
-    border: 1px solid #000;
     position: absolute;
   }
   .home .wrap section .img {
