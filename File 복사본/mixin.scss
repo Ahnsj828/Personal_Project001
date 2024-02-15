@@ -13,6 +13,7 @@
   font-size: 3rem;
   position: absolute;
   left: 10%;
+  left: 9rem;
   color: #201C14;
   .logo-back {
     color: #ff5d2c;
@@ -31,6 +32,7 @@
   font-size: 2.3rem;
   position: absolute;
   left: 6%;
+  left: 5rem;
   color: #201C14;
   .logo-back {
     color: #ff5d2c;
@@ -49,6 +51,7 @@
   .menu-on-right {
     color: #ff8255;
     margin: 10px;
+    margin: 0.8rem;
   }
 }
 @mixin menu-on-t {
@@ -59,6 +62,7 @@
   .menu-on-right {
     color: #ff8255;
     margin: 10px;
+    margin: 0.8rem;
   }
 }
 @mixin menu-off {
@@ -71,7 +75,9 @@
 }
 @mixin sns {
   left: 4%;
+  left: 3.7rem;
   bottom: 35%;
+  bottom: 15rem;
   display: flex;
   position: absolute;
   justify-content: center;

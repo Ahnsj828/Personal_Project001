@@ -36,9 +36,10 @@
       left: 0;
     }
     .bg-LB {
-      bottom: -1%;
+      bottom: 0;
       left: 0;
       height: 35%;
+      height: 14.6rem;
     }
     .bg-RT {
       top: 0;
@@ -46,11 +47,13 @@
     }
     .bg-RM {
       top: 50%;
+      top: 21rem;
       right: 0;
       height: 30%;
+      height: 12.6rem;
     }
     .bg-RB {
-      bottom: -1%;
+      bottom: 0;
       right: 0;
     }
   }
@@ -72,7 +75,8 @@
       // ---이걸넣어서 올라왔다--
       position: fixed;
       left: 0%;
-        top: 10%;
+      top: 10%;
+      top: 5.3rem;
       // -----------------
       width: 100%;
       display: flex;
@@ -103,7 +107,9 @@
       transform: translate(-43%, -45%);
       display: flex;
       width: 86%;
+      width: 77rem;
       height: 50%;
+      height: 20rem;
       justify-content: center;
       padding: 0;
       .img {
@@ -117,6 +123,7 @@
             0%{
               opacity: 0;
               margin-left: -8%;
+              margin-left: -4.5rem;
             }
             100%{
               opacity: 1;
@@ -133,26 +140,32 @@
         #section-W2 {
           position: absolute;
           bottom: 0;
-          left:38%;
-          // left: 90%;
+          left: 87%;
+          left: 67rem;
+          left: 36%;
+          left: 28rem;
           height: 20%;
           margin: 0;
           animation: W2 linear 20s infinite;
           @keyframes W2 {
             0% {
               left: 87%;
+              left: 67rem;
               opacity: 0;
             }
             7%{
               left: 84%;
+              left: 64.5rem;
               opacity: 1;
             }
             80% {
               left: 43%;
+              left: 33rem;
               opacity: 1;
             }
             100%{
               left: 36%;
+              left: 28rem;
               opacity: 0;
             }
           }
@@ -164,8 +177,10 @@
         text-align: left;
         position: relative;
         top: 27%;
+        top: 5rem;
         padding: 0.3rem;
         width: 25%;
+        width: 19.3rem;
         z-index: 1;
         // animation: img 1s 0.5s linear;
         // animation-fill-mode: both;
@@ -201,20 +216,24 @@
           0%{
             opacity: 0;
             margin-left: 10%;
+            margin-left: 1.7rem;
           }
           100%{
             opacity: 1;
             margin-left: 1;
+            margin-left: 0.1rem;
           }
         }
         @keyframes right2 {
           0%{
             opacity: 0;
             margin-left: 3%;
+            margin-left: 0.5rem;
           }
           100%{
             opacity: 1;
             margin-left: 1;
+            margin-left: 0.1rem;
           }
         }
       }
@@ -239,6 +258,7 @@
       section {
         .img {
           width: 40%;
+          width: 30rem;
           height: 100%;
           z-index: 2;
           #section-bg-t {
@@ -250,6 +270,7 @@
         }
         .text{
           top: 33%;
+          top: 7rem;
           left: 5%;
           height: 60%;
           z-index: 1;
