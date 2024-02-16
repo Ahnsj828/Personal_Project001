@@ -159,7 +159,8 @@ a {
   height: 25rem;
   z-index: 1;
 }
-.home .wrap section .img #section-bg, .home .wrap section .img #section-g {
+.home .wrap section .img #section-bg,
+.home .wrap section .img #section-g {
   width: 50rem;
   bottom: 0;
   animation: section-bg 0.8s 0.1s linear;
@@ -357,7 +358,8 @@ a {
     height: 23rem;
     z-index: 1;
   }
-  .home .wrap section .img #section-bg, .home .wrap section .img #section-g {
+  .home .wrap section .img #section-bg,
+  .home .wrap section .img #section-g {
     width: 40rem;
     bottom: 0;
     animation: section-bg 0.8s 0.1s linear;
@@ -533,7 +535,6 @@ a {
     transform: rotate(-45deg);
   }
   .home .wrap section {
-    border: 1px solid #00f;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -546,7 +547,6 @@ a {
     z-index: 1;
   }
   .home .wrap section .sns {
-    border: 1px solid #f00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,14 +572,14 @@ a {
     position: absolute;
   }
   .home .wrap section .img {
-    border: 1px solid darkcyan;
     display: flex;
     justify-content: center;
     width: 32rem;
     height: 18rem;
     z-index: 1;
   }
-  .home .wrap section .img #section-bg, .home .wrap section .img #section-g {
+  .home .wrap section .img #section-bg,
+  .home .wrap section .img #section-g {
     width: 30rem;
     bottom: 0;
     animation: section-bg 0.8s 0.1s linear;

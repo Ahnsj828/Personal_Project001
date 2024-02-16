@@ -50,10 +50,9 @@ a {
   left: 0;
 }
 .home .bg .bg-LB {
-  bottom: 0;
+  bottom: -1%;
   left: 0;
   height: 35%;
-  height: 14.6rem;
 }
 .home .bg .bg-RT {
   top: 0;
@@ -61,13 +60,11 @@ a {
 }
 .home .bg .bg-RM {
   top: 50%;
-  top: 21rem;
   right: 0;
   height: 30%;
-  height: 12.6rem;
 }
 .home .bg .bg-RB {
-  bottom: 0;
+  bottom: -1%;
   right: 0;
 }
 .home .wrap {
@@ -84,7 +81,6 @@ a {
   position: fixed;
   left: 0%;
   top: 10%;
-  top: 5.3rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -94,7 +90,6 @@ a {
   font-size: 3rem;
   position: absolute;
   left: 10%;
-  left: 9rem;
   color: #201C14;
 }
 .home .wrap header h1 .logo-back {
@@ -114,7 +109,6 @@ a {
 .home .wrap header .menu .menu-on .menu-on-right {
   color: #ff8255;
   margin: 10px;
-  margin: 0.8rem;
 }
 .home .wrap header .menu .menu-off {
   font: normal 1.1rem/1 "Roboto", sans-serif;
@@ -130,9 +124,7 @@ a {
   transform: translate(-43%, -45%);
   display: flex;
   width: 86%;
-  width: 77rem;
   height: 50%;
-  height: 20rem;
   justify-content: center;
   padding: 0;
 }
@@ -149,7 +141,6 @@ a {
   0% {
     opacity: 0;
     margin-left: -8%;
-    margin-left: -4.5rem;
   }
   100% {
     opacity: 1;
@@ -165,10 +156,7 @@ a {
 .home .wrap section .img #section-W2 {
   position: absolute;
   bottom: 0;
-  left: 87%;
-  left: 67rem;
-  left: 36%;
-  left: 28rem;
+  left: 38%;
   height: 20%;
   margin: 0;
   animation: W2 linear 20s infinite;
@@ -176,22 +164,18 @@ a {
 @keyframes W2 {
   0% {
     left: 87%;
-    left: 67rem;
     opacity: 0;
   }
   7% {
     left: 84%;
-    left: 64.5rem;
     opacity: 1;
   }
   80% {
     left: 43%;
-    left: 33rem;
     opacity: 1;
   }
   100% {
     left: 36%;
-    left: 28rem;
     opacity: 0;
   }
 }
@@ -201,10 +185,8 @@ a {
   text-align: left;
   position: relative;
   top: 27%;
-  top: 5rem;
   padding: 0.3rem;
   width: 25%;
-  width: 19.3rem;
   z-index: 1;
 }
 .home .wrap section .text #sub1 {
@@ -239,31 +221,25 @@ a {
   0% {
     opacity: 0;
     margin-left: 10%;
-    margin-left: 1.7rem;
   }
   100% {
     opacity: 1;
     margin-left: 1;
-    margin-left: 0.1rem;
   }
 }
 @keyframes right2 {
   0% {
     opacity: 0;
     margin-left: 3%;
-    margin-left: 0.5rem;
   }
   100% {
     opacity: 1;
     margin-left: 1;
-    margin-left: 0.1rem;
   }
 }
 .home .wrap .sns {
   left: 4%;
-  left: 3.7rem;
   bottom: 35%;
-  bottom: 15rem;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -290,7 +266,6 @@ a {
 @media screen and (max-width: 1397px) {
   .home .wrap section .img {
     width: 40%;
-    width: 30rem;
     height: 100%;
     z-index: 2;
   }
@@ -302,7 +277,6 @@ a {
   }
   .home .wrap section .text {
     top: 33%;
-    top: 7rem;
     left: 5%;
     height: 60%;
     z-index: 1;
@@ -483,7 +457,6 @@ a {
   .home .wrap header .menu .menu-on .menu-on-right {
     color: #ff8255;
     margin: 10px;
-    margin: 0.8rem;
   }
   .home .wrap header .menu .menu-off {
     font: normal 0.9em/1 "Roboto", sans-serif;
@@ -549,9 +522,7 @@ a {
   }
   .home .wrap .sns {
     left: 4%;
-    left: 3.7rem;
     bottom: 35%;
-    bottom: 15rem;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -614,9 +585,7 @@ a {
   }
   .home .wrap .sns {
     left: 4%;
-    left: 3.7rem;
     bottom: 35%;
-    bottom: 15rem;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -664,7 +633,6 @@ a {
     font-size: 2.3rem;
     position: absolute;
     left: 6%;
-    left: 5rem;
     color: #201C14;
   }
   .home .wrap header h1 .logo-back {
